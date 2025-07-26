@@ -1,7 +1,9 @@
 ## How to install
 
-- `<your-package-manager install command>` power-profiles-daemon
-- cargo install power-rules-daemon
+```
+<your-package-manager install command> power-profiles-daemon
+cargo install power-rules-daemon
+```
 
 And enable the next services
 
