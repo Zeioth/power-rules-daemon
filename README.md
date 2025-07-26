@@ -36,7 +36,7 @@ profile = "balanced"
 ```
 
 ## Rules example
-Most users will use this daemon for gaming with rules like the next
+Most users will use this daemon for gaming with rules like
 
 ```toml
 # While a steam game is executed
