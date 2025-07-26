@@ -1,0 +1,49 @@
+## How to install
+Install the next programs on your computer
+
+- `<your-package-manager install command>` power-profiles-daemon
+- cargo install power-rules-daemon
+
+And enable its daemons
+
+systemctl --user daemon-reload
+systemctl --user enable --now power-profiles-daemon.service
+systemctl --user enable --now power-rules-daemon.service
+
+Now you can configure your rules in `~/.config/power-rules/config.toml`.
+
+## How to debug
+You can manually run the command `power-rules`. It will show info every time
+a rule is triggered, or the config file changes.
+
+## Example config file
+```toml
+[config]
+default_profile = "balanced"  # Profile to use when no rules are triggered atm.
+polling_interval = 5          # Amount of seconds before checking if a rule is triggered.
+pause_on_manual_change = 180  # If the user manually changes the power profile (through the desktop environment gui, for example), the daemon paused for n minutes.
+
+[[rule]]
+name = "eldenring.exe"        # A word to match in the process name.
+profile = "performance"       # The power profile to switch to.
+
+[[rule]]
+name = "firefox"              # A word to match in the process name.
+profile = "balanced"          # The power profile to switch to.
+
+```
+
+## Rule order
+Rules are applied by order from above to below of the config file.
+
+So if for example you are running `eldenring.exe` and `firefox` at the same time, the rule defined at the bottom of the file will be the one applied (firefox, on the example config). And when you close firefox, the rule from eldenring.exe will be applied, etc.
+
+if no rules are currently triggered, `default_mode` will be the mode used.
+
+## More info
+- This program requires GNU linux.
+
+## TODOS
+- Is cargo gonna be responsible of installing the service? I assume yes.
+- Is cargo gonna create a default config file? I assume yes.
+- Implement log files support.
