@@ -48,3 +48,6 @@ if no rules are currently triggered, `default_mode` will be the mode used.
 - Is cargo gonna be responsible of installing the service? I assume yes.
 - Is cargo gonna create a default config file? I assume yes.
 - Implement propper log files support.
+
+## Credits
+This progaram was originally [a proposal] to replace the program `game-performance` on CachyOS. And now it can be used on any distro!
