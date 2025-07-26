@@ -11,7 +11,7 @@ systemctl --user enable --now power-profiles-daemon.service
 systemctl --user enable --now power-rules-daemon.service
 ```
 
-Now you can configure your rules in `~/.config/power-rules/config.toml`.
+Now you can configure your rules in `~/.config/power-rules/config.toml`
 
 ## How to debug
 You can manually run the command `power-rules`. It will show info every time
