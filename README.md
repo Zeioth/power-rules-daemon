@@ -3,11 +3,13 @@
 - `<your-package-manager install command>` power-profiles-daemon
 - cargo install power-rules-daemon
 
-And enable the next daemons
+And enable the next services
 
+```sh
 systemctl --user daemon-reload
 systemctl --user enable --now power-profiles-daemon.service
 systemctl --user enable --now power-rules-daemon.service
+```
 
 Now you can configure your rules in `~/.config/power-rules/config.toml`.
 
