@@ -25,7 +25,7 @@ polling_interval = 5          # Amount of seconds before checking if a rule is t
 pause_on_manual_change = 180  # If the user manually changes the power profile (through the desktop environment gui, for example), the daemon paused for n minutes.
 
 [[rule]]
-name = "eldenring.exe"        # A word to match in the process name.
+name = "eldenring.exe"        # A string to match in the process name.
 profile = "performance"       # The power profile to switch to.
 
 [[rule]]
