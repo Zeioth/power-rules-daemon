@@ -36,14 +36,7 @@ profile = "balanced"          # The power profile to switch to.
 
 ```
 
-## Rule order
-Rules are applied by order from above to below of the config file.
-
-So if for example you are running `eldenring.exe` and `firefox` at the same time, the rule defined at the bottom of the file will be the one applied (firefox, on the example config). And when you close firefox, the rule from eldenring.exe will be applied, etc.
-
-if no rules are currently triggered, `default_profile` will be the one used.
-
-## Typical rules example
+## Rules example
 Most users will use this daemon for gaming with rules like the next
 
 ```toml
@@ -69,6 +62,13 @@ profile = "performance"
 name = "retroarch"
 profile = "performance"
 ```
+
+## Rule order
+Rules are applied by order from above to below of the config file.
+
+So if for example you are running `eldenring.exe` and `firefox` at the same time, the rule defined at the bottom of the file will be the one applied (firefox, on the example config). And when you close firefox, the rule from eldenring.exe will be applied, etc.
+
+if no rules are currently triggered, `default_profile` will be the one used.
 
 ## More info
 - This program requires GNU Linux.
