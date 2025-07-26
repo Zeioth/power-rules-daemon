@@ -44,6 +44,7 @@ if no rules are currently triggered, `default_mode` will be the mode used.
 - This program requires GNU linux.
 
 ## TODOS
+- The program works, but we still have to make it installable through cargo.
 - Is cargo gonna be responsible of installing the service? I assume yes.
 - Is cargo gonna create a default config file? I assume yes.
-- Implement log files support.
+- Implement propper log files support.
