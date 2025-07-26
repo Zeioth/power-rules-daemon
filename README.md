@@ -1,10 +1,9 @@
 ## How to install
-Install the next programs on your computer
 
 - `<your-package-manager install command>` power-profiles-daemon
 - cargo install power-rules-daemon
 
-And enable its daemons
+And enable the next daemons
 
 systemctl --user daemon-reload
 systemctl --user enable --now power-profiles-daemon.service
