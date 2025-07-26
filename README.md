@@ -42,7 +42,7 @@ So if for example you are running `eldenring.exe` and `firefox` at the same time
 if no rules are currently triggered, `default_profile` will be the one used.
 
 ## More info
-- This program requires GNU linux.
+- This program requires GNU Linux.
 
 ## TODOS
 - The program works, but we still have to make it installable through cargo.
@@ -51,6 +51,7 @@ if no rules are currently triggered, `default_profile` will be the one used.
 - Implement proper log files support.
 - Tests (once features are confirmed).
 - CI tests pipeline.
+- Better docstrings, so nice docs can be CI pipelined.
 
 ## Credits
 This progaram was originally [a proposal](https://github.com/CachyOS/CachyOS-Settings/pull/157) to replace the program `game-performance` on CachyOS. And now it can be used on any distro!
