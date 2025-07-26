@@ -41,6 +41,31 @@ So if for example you are running `eldenring.exe` and `firefox` at the same time
 
 if no rules are currently triggered, `default_profile` will be the one used.
 
+## Typical rules example
+```toml
+# While a steam game is executed
+[[rule]]
+name = "steamapps/common"
+profile = "performance"
+
+# While launchers are executed
+[[rule]]
+name = "lutris"
+profile = "performance"
+
+[[rule]]
+name = "heroic"
+profile = "performance"
+
+[[rule]]
+name = "gamehub"
+profile = "performance"
+
+[[rule]]
+name = "retroarch"
+profile = "performance"
+```
+
 ## More info
 - This program requires GNU Linux.
 
