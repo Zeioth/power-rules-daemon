@@ -53,4 +53,4 @@ if no rules are currently triggered, `default_mode` will be the mode used.
 - CI tests pipeline.
 
 ## Credits
-This progaram was originally [a proposal] to replace the program `game-performance` on CachyOS. And now it can be used on any distro!
+This progaram was originally [a proposal](https://github.com/CachyOS/CachyOS-Settings/pull/157) to replace the program `game-performance` on CachyOS. And now it can be used on any distro!
