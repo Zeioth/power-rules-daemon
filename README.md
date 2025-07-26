@@ -42,6 +42,8 @@ So if for example you are running `eldenring.exe` and `firefox` at the same time
 if no rules are currently triggered, `default_profile` will be the one used.
 
 ## Typical rules example
+Most users will use this daemon for gaming with rules like the next
+
 ```toml
 # While a steam game is executed
 [[rule]]
