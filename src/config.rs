@@ -62,10 +62,10 @@ impl ConfigWatcher {
     }
 }
 
-/// Validates power profile modes
-fn validate_mode(mode: &str) -> bool {
+/// Validates the default power profile string.
+fn validate_default_profile(profile: &str) -> bool {
     matches!(
-        mode.to_lowercase().as_str(),
+        profile.to_lowercase().as_str(),
         "performance" | "balanced" | "power-saver" | "power_saver"
     )
 }
@@ -92,18 +92,18 @@ pub fn load_config(config_path: &PathBuf) -> Result<Config> {
     let config: Config = from_str(&config_data).context("Failed to parse TOML configuration")?;
 
     // Validate default_profile if specified
-    if let Some(ConfigSection { default_profile: Some(mode), .. }) = &config.config {
-        if !validate_mode(mode) {
+    if let Some(ConfigSection { default_profile: Some(profile), .. }) = &config.config {
+        if !validate_default_profile(profile) {
             return Err(anyhow::anyhow!(
                 "Invalid default_profile '{}' in config. Must be one of: performance, balanced, power-saver",
-                mode
+                profile
             ));
         }
     }
 
     // Validate all rule profiles
     for rule in &config.rule {
-        if !validate_mode(&rule.profile) {
+        if !validate_default_profile(&rule.profile) {
             return Err(anyhow::anyhow!(
                 "Invalid profile '{}' for rule '{}'. Must be one of: performance, balanced, power-saver",
                 rule.profile,
