@@ -24,7 +24,7 @@ a rule is triggered, or the config file changes.
 [config]
 default_profile = "balanced"  # Profile to use when no rules are triggered atm.
 polling_interval = 5          # Amount of seconds before checking if a rule is triggered.
-pause_on_manual_change = 180  # If the user manually changes the power profile (through the desktop environment gui, for example), the daemon paused for n minutes.
+pause_on_manual_change = 180  # If the user manually changes the power profile (through the desktop environment gui, for example), the daemon is paused for n minutes.
 
 [[rule]]
 name = "eldenring.exe"        # A string to match in the process name.
