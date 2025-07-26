@@ -31,9 +31,8 @@ name = "eldenring.exe"        # A string to match in the process name.
 profile = "performance"       # The power profile to switch to.
 
 [[rule]]
-name = "firefox"              # A string to match in the process name.
-profile = "balanced"          # The power profile to switch to.
-
+name = "firefox"
+profile = "balanced"
 ```
 
 ## Rules example
