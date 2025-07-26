@@ -1,7 +1,7 @@
 ## How to install
 
 ```
-<your-package-manager install command> power-profiles-daemon
+<your-package-manager-install-command> power-profiles-daemon
 cargo install power-rules-daemon
 ```
 
