@@ -75,7 +75,7 @@ if no rules are currently triggered, `default_profile` will be the one used.
 ## TODOS
 - The program works, but we still have to make it installable through cargo.
 - Is cargo gonna be responsible of installing the service? I assume yes.
-- Is cargo gonna create a default config file? I assume yes.
+- Is cargo gonna create a default config file? I assume yes. → But create it only if the directory is empty! We don't want to smash user changes.
 - Implement proper log files support.
 - Tests (once features are confirmed).
 - CI tests pipeline.
