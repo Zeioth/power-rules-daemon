@@ -81,6 +81,7 @@ if no rules are currently triggered, `default_profile` will be the one used.
 - Tests (once features are confirmed).
 - CI tests pipeline.
 - Better docstrings, so nice docs can be CI pipelined.
+- A man file is probably a good idea.
 
 ## Credits
 This progaram was originally [a proposal](https://github.com/CachyOS/CachyOS-Settings/pull/157) to replace the program `game-performance` on CachyOS. And now it can be used on any distro!
