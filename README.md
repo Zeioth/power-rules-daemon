@@ -39,7 +39,7 @@ Rules are applied by order from above to below of the config file.
 
 So if for example you are running `eldenring.exe` and `firefox` at the same time, the rule defined at the bottom of the file will be the one applied (firefox, on the example config). And when you close firefox, the rule from eldenring.exe will be applied, etc.
 
-if no rules are currently triggered, `default_profile` will be the mode used.
+if no rules are currently triggered, `default_profile` will be the one used.
 
 ## More info
 - This program requires GNU linux.
