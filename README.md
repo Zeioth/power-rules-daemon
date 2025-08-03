@@ -31,13 +31,12 @@ name = "eldenring.exe"        # A string to match in the process name.
 profile = "performance"       # The power profile to switch to.
 
 [[rule]]
-name = "firefox"              # A word to match in the process name.
-profile = "balanced"          # The power profile to switch to.
-
+name = "firefox"
+profile = "balanced"
 ```
 
 ## Rules example
-Most users will use this daemon for gaming with rules like the next
+Most users will use this daemon for gaming with rules like
 
 ```toml
 # While a steam game is executed
@@ -76,11 +75,13 @@ if no rules are currently triggered, `default_profile` will be the one used.
 ## TODOS
 - The program works, but we still have to make it installable through cargo.
 - Is cargo gonna be responsible of installing the service? I assume yes.
-- Is cargo gonna create a default config file? I assume yes.
+- Is cargo gonna create a default config file? I assume yes. → But create it only if the directory is empty! We don't want to smash user changes.
 - Implement proper log files support.
 - Tests (once features are confirmed).
 - CI tests pipeline.
 - Better docstrings, so nice docs can be CI pipelined.
+- A man file is probably a good idea.
+- Let's consider a few options for notifications, in case the user want to have them (it makes easier to visually confirm what's going on).
 
 ## Credits
 This progaram was originally [a proposal](https://github.com/CachyOS/CachyOS-Settings/pull/157) to replace the program `game-performance` on CachyOS. And now it can be used on any distro!
