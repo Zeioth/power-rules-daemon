@@ -32,9 +32,10 @@ systemctl --user daemon-reload && systemctl --user enable --now power-rules-daem
 Now you MUST manually create your config file in `~/.config/power-rules/config.toml`
 
 ```toml
+# Some tips!
 # - Changes in this file will be applied in real time.
-# - Rules will be applied in natural order.
 # - Rule process name matching can be partial.
+# - Rules will be applied in natural order.
 
 [config]
 default_profile = "balanced"  # Profile to use when no rules are triggered atm.
