@@ -66,8 +66,8 @@ Rules are applied by order from above to below of the config file.
 
 If no rules are currently triggered, `default_profile` will be the one used.
 
-## For package maintainers: How to distribute this program
-Distributing this program in a linux distro is very easy! The installer should just:
+## How to distribute this program
+Distributing this program in your linux distro is very easy! The installer should just:
 
 - Install the program with: `cargo install power-rules-daemon`
 - Copy the service (the user can enable it / start it himself).
