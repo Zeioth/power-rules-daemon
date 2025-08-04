@@ -33,7 +33,7 @@ Now you MUST manually create your config file in `~/.config/power-rules/config.t
 
 ```toml
 # - Changes in this file will be applied in real time.
-# - Rules will be applied in order.
+# - Rules will be applied in natural order.
 
 [config]
 default_profile = "balanced"  # Profile to use when no rules are triggered atm.
