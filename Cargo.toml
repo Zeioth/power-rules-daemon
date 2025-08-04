@@ -1,9 +1,9 @@
 [package]
 name = "power-rules-daemon"
-version = "0.0.1"
+version = "1.0.0"
 edition = "2024"
 authors = ["Your Name <adrian3d.art@gmail.com>"]
-description = "A daemon for managing power-related rules and events."
+description = "A daemon for defining power rules for the power-profiles-daemon."
 license = "GPL-3.0-only	"
 repository = "https://github.com/zeioth/power-rules-daemon"
 keywords = ["daemon", "power-management", "rules", "automation"]
