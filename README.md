@@ -71,7 +71,7 @@ Distributing this program in a linux distro is very easy! The installer should j
 
 - Install the program with: `cargo install power-rules-daemon`
 - Copy the service (the user can enable it / start it himself).
-- Add the program `power-profiles-daemon`.
+- Add the program `power-profiles-daemon` as dependency.
 
 ## TODOS
 - Implement proper log files support.
