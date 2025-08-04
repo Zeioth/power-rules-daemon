@@ -1,14 +1,16 @@
-## How to install
+## Requirements
+You MUST have `power-profiles-daemon` installed, and its service running before using the `power-rules-daemon`.
 
+## How to install
+Install with
 ```sh
-<your-package-manager-install-command> power-profiles-daemon
 cargo install power-rules-daemon
 ```
 
-Create the service `~/.config/systemd/user/power-rules-daemon.service`
+Create the service in `~/.config/systemd/user/power-rules-daemon.service` with 
 
 ```systemd
-[Unit]
+echo "[Unit]
 Description=Power Rules Daemon
 After=graphical-session.target
 
@@ -17,21 +19,19 @@ ExecStart=%h/.cargo/bin/power-rules-daemon
 Restart=on-failure
 
 [Install]
-WantedBy=default.target
+WantedBy=default.target" > ~/.config/systemd/user/power-rules-daemon.service
 ```
 
-And enable both `power-profiles-daemon` and `power-rules-daemon` with:
+And enable it with:
 
 ```sh
-systemctl enable --now power-profiles-daemon.service
-systemctl --user daemon-reload
-systemctl --user enable --now power-rules-daemon.service
+systemctl --user daemon-reload && systemctl --user enable --now power-rules-daemon.service
 ```
 
-Now you can add your rules to `~/.config/power-rules/config.toml`
+
 
 ## Rules example
-Most users will use this daemon for gaming with rules like
+Now you can create your rules in `~/.config/power-rules/config.toml`
 
 ```toml
 [config]
@@ -62,9 +62,9 @@ name = "retroarch"
 profile = "performance"
 ```
 
-Rules are applied by order from above to below of the config file.
-
-If no rules are currently triggered, `default_profile` will be the one used.
+- Rules are applied in order.
+- If no rules are currently triggered, `default_profile` will be the one used.
+- Changes in the config file are applied in real time, so you don't need to reboot. 
 
 ## How to distribute this program
 Distributing this program in your linux distro is very easy! The installer should just:
