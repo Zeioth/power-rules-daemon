@@ -23,8 +23,8 @@ WantedBy=default.target
 And enable both `power-profiles-daemon` and `power-rules-daemon` with:
 
 ```sh
+systemctl enable --now power-profiles-daemon.service
 systemctl --user daemon-reload
-systemctl --user enable --now power-profiles-daemon.service
 systemctl --user enable --now power-rules-daemon.service
 ```
 
