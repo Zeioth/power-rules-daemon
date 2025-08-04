@@ -28,9 +28,7 @@ And enable it with:
 systemctl --user daemon-reload && systemctl --user enable --now power-rules-daemon.service
 ```
 
-
-
-## Rules example
+## Config file
 Now you can create your rules in `~/.config/power-rules/config.toml`
 
 ```toml
