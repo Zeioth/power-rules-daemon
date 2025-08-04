@@ -32,6 +32,9 @@ systemctl --user daemon-reload && systemctl --user enable --now power-rules-daem
 Now you can create your rules in `~/.config/power-rules/config.toml`
 
 ```toml
+# - Changes in this file will be applied in real time.
+# - Rules will be applied in order.
+
 [config]
 default_profile = "balanced"  # Profile to use when no rules are triggered atm.
 polling_interval = 5          # Amount of seconds before checking if a rule is triggered.
@@ -59,17 +62,15 @@ profile = "performance"
 name = "retroarch"
 profile = "performance"
 ```
-
-- Rules are applied in order.
-- If no rules are currently triggered, `default_profile` will be the one used.
-- Changes in the config file are applied in real time, so you don't need to reboot. 
-
+  
 ## How to distribute this program
 Distributing this program in your linux distro is very easy! The installer should just:
 
 - Install the program with: `cargo install power-rules-daemon`
-- Copy the service (the user can enable it / start it himself).
+- Copy the service `power-rules-daemon` service from the readme.
 - Add the program `power-profiles-daemon` as dependency.
+
+Let the users enable/start the services for `power-rules-daemon`/`power-profiles-daemon`.
 
 ## TODOS
 - Implement proper log files support.
