@@ -22,14 +22,14 @@ Restart=on-failure
 WantedBy=default.target" > ~/.config/systemd/user/power-rules-daemon.service
 ```
 
-And enable it with:
+And enable it with
 
 ```sh
 systemctl --user daemon-reload && systemctl --user enable --now power-rules-daemon.service
 ```
 
 ## Config file
-Now you can create your rules in `~/.config/power-rules/config.toml`
+Now you must manually create your config file in `~/.config/power-rules/config.toml`
 
 ```toml
 # - Changes in this file will be applied in real time.
