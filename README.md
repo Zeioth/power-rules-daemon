@@ -9,7 +9,7 @@ cargo install power-rules-daemon
 
 Create the service in `~/.config/systemd/user/power-rules-daemon.service` with 
 
-```systemd
+```sh
 echo "[Unit]
 Description=Power Rules Daemon
 After=graphical-session.target
