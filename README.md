@@ -1,5 +1,5 @@
 ## Requirements
-You MUST have `power-profiles-daemon` installed, and its service MUSt be running before using the `power-rules-daemon`.
+You MUST have `power-profiles-daemon` installed, and its service MUST be running before using the `power-rules-daemon`.
 
 ## How to install
 Install with
