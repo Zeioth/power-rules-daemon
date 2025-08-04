@@ -83,4 +83,4 @@ Let the users enable/start the services for `power-rules-daemon`/`power-profiles
 - Let's consider a few options for notifications, in case the user want to have them (it makes easier to visually confirm what's going on).
 
 ## Credits
-This progaram was originally [a proposal](https://github.com/CachyOS/CachyOS-Settings/pull/157) to replace the program `game-performance` on CachyOS. And now it can be used on any distro!
+This program was originally [a proposal](https://github.com/CachyOS/CachyOS-Settings/pull/157) to replace the program `game-performance` on CachyOS. And now it can be used on any distro!
