@@ -1,13 +1,13 @@
 ## How to install
 
-```
+```sh
 <your-package-manager-install-command> power-profiles-daemon
 cargo install power-rules-daemon
 ```
 
 Create the service `~/.config/systemd/user/power-rules-daemon.service`
 
-```
+```systemd
 [Unit]
 Description=Power Rules Daemon
 After=graphical-session.target
