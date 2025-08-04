@@ -72,6 +72,13 @@ if no rules are currently triggered, `default_profile` will be the one used.
 ## More info
 - This program requires GNU Linux.
 
+## WIP: How to distribute
+If you want to distribute this program in a linux distro, the installer should:
+- Install the program with: `cargo install power-rules-daemon`
+- Copy the service (the user can enable it / start it himself).
+
+It's a good practice you make your distro installer check if rust is in the user path (meaning he will be able to execute it).
+
 ## TODOS
 - The program works, but we still have to make it installable through cargo.
 - Is cargo gonna be responsible of installing the service? I assume yes.
