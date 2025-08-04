@@ -80,8 +80,8 @@ If you want to distribute this program in a linux distro, the installer should:
 It's a good practice you make your distro installer check if rust is in the user path (meaning he will be able to execute it).
 
 ## TODOS
-- The program works, but we still have to make it installable through cargo.
-- Is cargo gonna be responsible of installing the service? I assume yes.
+- ~~The program works, but we still have to make it installable through cargo.~~ → Now installable with `cargo install power-rules-daemon`
+- Is cargo gonna be responsible of installing the service? → Actually no, cargo do not allow this for security reasons. So let's add to the readme how to create the service.
 - Is cargo gonna create a default config file? I assume yes. → But create it only if the directory is empty! We don't want to smash user changes.
 - Implement proper log files support.
 - Tests (once features are confirmed).
