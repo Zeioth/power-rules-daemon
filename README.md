@@ -79,8 +79,9 @@ Let the users enable/start the services for `power-rules-daemon`/`power-profiles
 - Tests (once features are confirmed).
 - CI tests pipeline.
 - Better docstrings, so nice docs can be CI pipelined.
-- A man file is probably a good idea.
+
 - Let's consider a few options for notifications, in case the user want to have them (it makes easier to visually confirm what's going on).
+- ~~A man file is probably a good idea.~~ → Installing man pages require sudo permissions, and we don't want that, so let's go with only README.md for now.
 
 ## Credits
 This program was originally [a proposal](https://github.com/CachyOS/CachyOS-Settings/pull/157) to replace the program `game-performance` on CachyOS. And now it can be used on any distro!
