@@ -86,6 +86,10 @@ profile = "performance"
 name = "retroarch"
 profile = "performance"
 ```
+
+## 🌟 Get involved
+If you wanna help the project leave a Star!
+[![Stargazers over time](https://starchart.cc/Zeioth/power-rules-daemon.svg)](https://starchart.cc/Zeioth/power-rules-daemon)
   
 ## How to distribute this program
 Distributing this program in your linux distro is very easy! The installer should just:
