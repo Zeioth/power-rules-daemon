@@ -2,6 +2,19 @@
 You MUST have `power-profiles-daemon` installed in your system, and its service MUST be running before using the `power-rules-daemon`.
 
 ## How to install
+### Arch Linux
+Install with
+```sh
+yay -S power-profiles-daemon
+```
+
+And enable the service
+```sh
+systemctl enable --now power-rules-daemon.service
+```
+
+### Any other distro
+
 Install with
 ```sh
 cargo install power-rules-daemon
