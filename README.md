@@ -1,4 +1,4 @@
-Daemon written in Rust to automatically change your power profile when a program is executed.
+Daemon written in Rust to automatically change your power profile while a program is executed.
 
 ## Table of contents
 
