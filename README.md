@@ -1,5 +1,7 @@
 Daemon written in Rust to automatically change your power profile when a program is executed.
 
+## Table of contents
+
 - [How to install](#how-to-install)
   - [Arch Linux](#arch-linux)
   - [Other distros](#other-distros)
