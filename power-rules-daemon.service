@@ -3,7 +3,7 @@ Description=Power Rules Daemon
 After=graphical-session.target
 
 [Service]
-ExecStart=%h/.cargo/bin/power-rules-daemon
+ExecStart=/usr/bin/power-rules-daemon
 Restart=on-failure
 
 [Install]
