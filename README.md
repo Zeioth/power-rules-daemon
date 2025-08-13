@@ -1,3 +1,9 @@
+- [How to install](#how-to-install)
+  - [Arch Linux](#arch-linux)
+  - [Other distros](#other-distros)
+- [Config file](#config-file)
+- [How to distribute this program](#how-to-distribute-this-program)
+
 ## How to install
 ### Arch Linux
 Install with
@@ -11,7 +17,7 @@ systemctl enable --now power-profiles-daemon.service
 systemctl enable --now power-rules-daemon.service
 ```
 
-### Any other distro
+### Other distros
 You MUST have `power-profiles-daemon` installed in your system, and its service MUST be running before using the `power-rules-daemon`.
 
 Install with
