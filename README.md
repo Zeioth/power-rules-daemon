@@ -51,7 +51,7 @@ systemctl --user daemon-reload && systemctl --user enable --now power-rules-daem
 ```
 
 ## Config file
-Now you MUST manually create your config file in `~/.config/power-rules/config.toml`
+You must manually create your config file in `~/.config/power-rules/config.toml`
 
 ```toml
 # Some tips!
