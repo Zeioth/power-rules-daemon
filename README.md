@@ -91,7 +91,7 @@ profile = "performance"
 Distributing this program in your linux distro is very easy! The installer should just:
 
 - Install the program with: `cargo install power-rules-daemon`
-- Copy the service `power-rules-daemon.service` service from the repo (or this readme).
+- Copy `power-rules-daemon.service` from the repo (or this readme).
 - Add the program `power-profiles-daemon` as dependency.
 
 Let the users enable/start the services for `power-rules-daemon`/`power-profiles-daemon`.
