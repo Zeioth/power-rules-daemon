@@ -12,7 +12,7 @@ Daemon written in Rust to automatically change your power profile while a progra
 ### Arch Linux
 Install with
 ```sh
-yay -S power-profiles-daemon
+paru -S power-profiles-daemon
 ```
 
 And enable the services
