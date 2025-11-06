@@ -11,7 +11,7 @@ Daemon written in Rust to automatically change your power profile while a progra
 
 ## Why?
 
-* It works with flatpak games/steam (unlike `gamemode`, and `game-performance`).
+* It works with flatpak game and steam flatpak (unlike `gamemode`, and `game-performance`).
 * No need to pass `gamemode` to each game.
 * More configurable.
 
