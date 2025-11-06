@@ -2,11 +2,18 @@ Daemon written in Rust to automatically change your power profile while a progra
 
 ## Table of contents
 
+- [Why?](#why)
 - [How to install](#how-to-install)
   - [Arch Linux](#arch-linux)
   - [Other distros](#other-distros)
 - [Config file](#config-file)
 - [How to distribute this program](#how-to-distribute-this-program)
+
+## Why?
+
+* It works with flatpak games/steam (unlike `gamemode`, and `game-performance`).
+* No need to pass `gamemode` to each game.
+* More configurable.
 
 ## How to install
 ### Arch Linux
