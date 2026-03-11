@@ -101,18 +101,18 @@ If you wanna help the project leave a Star!
 ## How to distribute this program
 Distributing this program in your linux distro is very easy! The installer should just:
 
-- Install the program with: `cargo install power-rules-daemon`
+- Install the program with: `cargo install power-rules-daemon`.
 - Copy `power-rules-daemon.service` from the repo (or this readme).
 - Add the program `power-profiles-daemon` as dependency.
 
 Let the users enable/start the services for `power-rules-daemon`/`power-profiles-daemon`.
 
 ## TODOS
+- Add: Option to enable `use_x3dmodectl` while gaming. This can be useful for CPUs like 9950X3D, which should prefer 3D chiplets while gaming, and the non 3D chiplet for other tasks.
+- Better docstrings, so nice docs can be CI pipelined.
 - Implement proper log files support.
 - Tests (once features are confirmed).
 - CI tests pipeline.
-- Better docstrings, so nice docs can be CI pipelined.
-
 - Let's consider a few options for notifications, in case the user want to have them (it makes easier to visually confirm what's going on).
 - ~~A man file is probably a good idea.~~ → Installing man pages require sudo permissions, and we don't want that, so let's go with only README.md for now.
 
