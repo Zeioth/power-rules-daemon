@@ -112,6 +112,7 @@ Let the users enable/start the services for `power-rules-daemon`/`power-profiles
 - Better docstrings, so nice docs can be CI pipelined.
 - IDEA: Maybe it would be a good idea to trigger state change: When the daemon is started. When the config file is saved. At the end of `pause_on_manual_change` (I could swear we are already doing this one, but let's make sure).
 - IDEA: Let's have an option `on_battery_mode=powersave`. This is the main case of use users want to use really. As on a desktop PC, it's recommended to always be on `performance` for improved frametimes (both on gaming, and smoothscroll on gpu accelerated internet browsers).
+- IDEA: Second project, like `power-rules-daemon` but to set scheduler while gaming though `sudo scx_bpfland -m performance` or similar.
 - Implement proper log files support.
 - Tests (once features are confirmed).
 - CI tests pipeline.
