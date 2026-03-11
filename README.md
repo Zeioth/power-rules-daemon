@@ -108,7 +108,7 @@ Distributing this program in your linux distro is very easy! The installer shoul
 Let the users enable/start the services for `power-rules-daemon`/`power-profiles-daemon`.
 
 ## TODOS
-- Add: Option to enable `use_x3dmodectl` while gaming. This can be useful for CPUs like 9950X3D, which should prefer 3D chiplets while gaming, and the non 3D chiplet for other tasks.
+- Add: Option to enable `use_x3dmodectl` while gaming. This can be useful for CPUs like 9950X3D, which should prefer the 3D chiplet while gaming, and the non 3D chiplet for other tasks for marginal performance gains.
 - Better docstrings, so nice docs can be CI pipelined.
 - Implement proper log files support.
 - Tests (once features are confirmed).
