@@ -111,6 +111,7 @@ Let the users enable/start the services for `power-rules-daemon`/`power-profiles
 - Add: Option to enable `use_x3dmodectl` while gaming. This can be useful for CPUs like 9950X3D, which should prefer the 3D chiplet while gaming, and the non 3D chiplet for other tasks for marginal performance gains.
 - Better docstrings, so nice docs can be CI pipelined.
 - IDEA: Maybe it would be a good idea to trigger state change: When the daemon is started. When the config file is saved. At the end of `pause_on_manual_change` (I could swear we are already doing this one, but let's make sure).
+- IDEA: Let's have an option `on_battery_mode=powersave`. This is the main case of use users want to use really. As on a desktop PC, it's recommended to always be on `performance` for improved frametimes (both on gaming, and smoothscroll on gpu accelerated internet browsers).
 - Implement proper log files support.
 - Tests (once features are confirmed).
 - CI tests pipeline.
